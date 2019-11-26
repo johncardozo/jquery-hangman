@@ -1,0 +1,40 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+h1{
+    background-color: rgb(37, 56, 74);
+    color: white;
+    margin: 0px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+#blanksArea{
+    margin-bottom: 15px;
+}
+.blank{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 3px;
+    border-bottom: 2px #d6d6d6 solid;
+    text-align: center;
+    vertical-align: text-bottom;
+    font-size: 35px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.space {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 3px;
+}
+
+canvas{
+    width: 300px;
+    height: 150px;
+    border: 1px solid lightslategray;
+    margin: 10px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/hangman.css">
+</head>
+<body>
+    <h1>Hangman</h1>
+    <div id="blanksArea"></div>
+    <div class="col col-6">
+        <div class="alert alert-success" role="alert" id="winner-message">
+            We have a winner!!!
+        </div>
+        <div class="alert alert-danger" role="alert" id="loser-message">
+            Such a loser!!!
+        </div>            
+    </div>
+    <form class="form-inline">
+        <div class="form-group mx-sm-3 mb-2">
+            <input type="text" class="form-control" id="guessText" placeholder="Possible movie">
+        </div>
+        <button type="button" id="guessButton" class="btn btn-primary mb-2">Guess</button>
+    </form>
+
+    <form class="form-inline">
+        <div class="form-group mx-sm-3 mb-2">
+            <input type="text" class="form-control" maxlength="1" id="letterText" placeholder="Type the letter to play">
+        </div>
+        <button type="button" id="letterButton" class="btn btn-primary mb-2">Play</button>
+    </form>
+
+    <canvas id="hangmanDrawing">Your browser does not support the canvas element.</canvas>
+
+    
+
+    <script src="js/vendors/jquery-3.4.1.min.js"></script>
+    <script src="js/vendors/bootstrap.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
