@@ -35,6 +35,6 @@ h1{
 canvas{
     width: 300px;
     height: 150px;
-    border: 1px solid lightslategray;
+    border: 1px solid #E4E0B5;
     margin: 10px;
 }
