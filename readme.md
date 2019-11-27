@@ -2,8 +2,9 @@
 
 A simple javascript game: the hangman.
 
-Written in Visual Studio Code.
+Written in [Visual Studio Code](https://code.visualstudio.com/)
 
-Libraries:
-- JQuery
-- Bootstrap
+### Libraries:
+
+- [JQuery](https://jquery.com/)
+- [Bootstrap](https://getbootstrap.com/)
