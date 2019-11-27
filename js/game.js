@@ -21,18 +21,6 @@ $(document).ready(function(){
         });
     };
 
-    /* Generate blanks in page based in the movie */
-    const generateBlanks = () => {
-        // Loop movies array
-        movie.forEach(element => {
-            if(element === ' '){
-                $("#blanksArea").append(`<div class="space">&nbsp;</div>`);
-            }else{
-                $("#blanksArea").append(`<div class="blank">&nbsp;</div>`);
-            } 
-        });
-    };
-
     /* Show current state of the game */
     const showCurrentState = () => {
         // Clear all blanks
@@ -111,7 +99,8 @@ $(document).ready(function(){
             }
         }
         // Clean the text input
-        $("#letterText").val('')
+        $("#letterText").val('');
+        $("#letterText").focus();
     });
 
     // Hide messages
@@ -124,9 +113,9 @@ $(document).ready(function(){
     // Get a random movie for the game
     getMovie();
     
-    // Generate blanks in page based in the movie
-    generateBlanks();
+    // Show current state of the game
+    showCurrentState();
 
-    // Show the movie (just for educational purposes)
+    // Show the movie in console (just for testing purposes)
     console.log(movie.join(''));
 });
